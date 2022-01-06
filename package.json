@@ -117,7 +117,7 @@
   "dependencies": {
     "@babel/runtime-corejs2": "^7.0.0",
     "classnames": "^2.2.5",
-    "dom-helpers": "^3.2.0",
+    "dom-helpers": "^5.0.0",
     "invariant": "^2.2.4",
     "keycode": "^2.2.0",
     "prop-types": "^15.6.1",
@@ -126,7 +126,7 @@
     "react-prop-types": "^0.4.0",
     "react-transition-group": "^2.0.0",
     "uncontrollable": "^7.0.2",
-    "warning": "^3.0.0"
+    "warning": "^4.0.0"
   },
   "release-script": {
     "bowerRepo": "git@github.com:react-bootstrap/react-bootstrap-bower.git"

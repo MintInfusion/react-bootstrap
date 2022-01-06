@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import transition from 'dom-helpers/transition';
+import transitionEnd from 'dom-helpers/transitionEnd';
 
 const propTypes = {
   direction: PropTypes.oneOf(['prev', 'next']),
@@ -43,7 +43,7 @@ class CarouselItem extends React.Component {
     const prevActive = prevProps.active;
 
     if (!active && prevActive) {
-      transition.end(ReactDOM.findDOMNode(this), this.handleAnimateOutEnd);
+      transitionEnd(ReactDOM.findDOMNode(this), this.handleAnimateOutEnd);
     }
 
     if (active !== prevActive) {

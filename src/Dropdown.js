@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import activeElement from 'dom-helpers/activeElement';
-import contains from 'dom-helpers/query/contains';
+import contains from 'dom-helpers/contains';
 import keycode from 'keycode';
 import React, { cloneElement } from 'react';
 import PropTypes from 'prop-types';

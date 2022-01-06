@@ -1,8 +1,9 @@
 import classNames from 'classnames';
-import events from 'dom-helpers/events';
+import addEventListener from 'dom-helpers/addEventListener';
+import removeEventListener from 'dom-helpers/removeEventListener';
 import ownerDocument from 'dom-helpers/ownerDocument';
-import canUseDOM from 'dom-helpers/util/inDOM';
-import getScrollbarSize from 'dom-helpers/util/scrollbarSize';
+import canUseDOM from 'dom-helpers/canUseDOM';
+import getScrollbarSize from 'dom-helpers/scrollbarSize';
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
@@ -188,13 +189,13 @@ class Modal extends React.Component {
 
   handleEntering() {
     // FIXME: This should work even when animation is disabled.
-    events.on(window, 'resize', this.handleWindowResize);
+    addEventListener(window, 'resize', this.handleWindowResize);
     this.updateStyle();
   }
 
   handleExited() {
     // FIXME: This should work even when animation is disabled.
-    events.off(window, 'resize', this.handleWindowResize);
+    removeEventListener(window, 'resize', this.handleWindowResize);
   }
 
   handleWindowResize() {

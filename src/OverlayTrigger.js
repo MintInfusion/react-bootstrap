@@ -1,4 +1,4 @@
-import contains from 'dom-helpers/query/contains';
+import contains from 'dom-helpers/contains';
 import React, { cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';

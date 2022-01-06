@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import css from 'dom-helpers/style';
+import css from 'dom-helpers/css';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Transition, {
